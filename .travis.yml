@@ -5,6 +5,8 @@ rvm:
 env:
   - PUPPET_VERSION=2.6.14
   - PUPPET_VERSION=2.7.14
+before_install:
+ - sudo apt-get install -qq libaugeas-dev
 notifications:
   email:
     - dev@realmediadigital.com
